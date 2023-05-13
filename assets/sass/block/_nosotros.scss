@@ -1,0 +1,54 @@
+.nosotros{
+
+    .row{
+        @include media(md){
+            flex-direction: column-reverse;
+        }
+    }
+    .col-left{
+        width: 100%;
+        min-height: 80vh;
+        @include bg-image-webp("hero", "nosotros.webp", "nosotros.jpg");
+        background-position: center;
+
+    }
+    .col-right{
+        background: #ffffeb;
+    }
+    .block-text{
+        padding-top: 70px;
+        padding-bottom: 70px;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        height: 100%;
+        max-width: 550px;
+        width: 100%;
+        padding-right: 5rem;
+        @include media(md){
+            max-width: 100%;
+            padding: 4rem 2rem;
+        }
+        @include media(sm){
+            padding: 4rem 26px;
+        }
+        h2{
+            color: $gray;
+            text-transform: uppercase;
+            font-family: $Montserrat-Black;
+            font-size: 36px;
+            margin-bottom: 2rem;
+        }
+
+        p{
+            color: $gray;
+            font-size: 18px;
+            line-height: 24px;
+            margin-bottom: 2rem;
+            @include media(md){
+                font-size: 1rem;
+                line-height: 22px;
+            }
+        }
+    }
+}

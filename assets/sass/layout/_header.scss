@@ -1,0 +1,89 @@
+header{
+    background-color: $black;
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 99;
+    @include media(md){
+        height: 60px;
+    }
+    .container{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .logo{
+            a{
+                color: $white;
+                text-transform: uppercase;
+                font-size: 30px;
+                font-family: $Montserrat-SemiBold;
+                @include media(md){
+                    font-size: 25px;
+                }
+            }
+        }
+        .menu{
+            display: flex;
+            @include media(md){
+                position: absolute;
+                top: 60px;
+                left: 0;
+                width: 100%;
+                height: 100vh;
+                background-color: $black;
+                opacity: 0;
+                visibility: hidden;
+                transition: $fast;
+            }
+            ul{
+                display: flex;
+                @include media(md){
+                    width: 100%;
+                    height: 100%;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                }
+                li{
+                    
+                    margin: 0rem 1rem;
+                    @include media(md){
+                        margin: 1rem 0;
+                    }
+                }
+                a{
+                    padding: 10px 10px;
+                    color: $white;
+                    transition: $fast;
+                    font-family: $Montserrat-Medium;
+                    border-radius: 6px;
+                    font-size: 14px;
+                    text-transform: uppercase;
+                    @include media-down(md){
+                      
+                        &:hover{
+                            background: $yellow;
+                            color: $black;
+                        }
+                    }
+                    @include media(md){
+                        font-size: 20px;
+                    }
+
+                }
+            }
+        }
+        
+    }
+}
+
+header.active{
+    .menu{
+        opacity: 1;
+        visibility: visible;
+    }
+}

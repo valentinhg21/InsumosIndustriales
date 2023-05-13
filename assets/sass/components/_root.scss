@@ -1,0 +1,94 @@
+
+@font-face {
+  font-family: 'Helvetica';
+  font-display: swap;
+  src:  url('../webfonts/Helvetica.woff') format('woff'),
+        url('../webfonts/Helvetica.woff2') format('woff2');
+  font-style: normal;
+}
+@font-face {
+    font-family: 'Montserrat-Black';
+    font-display: swap;
+    src:  url('../webfonts/Montserrat-Black.woff') format('woff'),
+          url('../webfonts/Montserrat-Black.woff2') format('woff2');
+    font-style: normal;
+    font-weight: 900;
+}
+@font-face {
+    font-family: 'Montserrat-Bold';
+    font-display: swap;
+    src:  url('../webfonts/Montserrat-Bold.woff') format('woff'),
+          url('../webfonts/Montserrat-Bold.woff2') format('woff2');
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Montserrat-Medium';
+    font-display: swap;
+    src:  url('../webfonts/Montserrat-Medium.woff') format('woff'),
+          url('../webfonts/Montserrat-Medium.woff2') format('woff2');
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Montserrat-SemiBold';
+    font-display: swap;
+    src:  url('../webfonts/Montserrat-SemiBold.woff') format('woff'),
+          url('../webfonts/Montserrat-SemiBold.woff2') format('woff2');
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Montserrat-Regular';
+    font-display: swap;
+    src:  url('../webfonts/Montserrat-Regular.woff') format('woff'),
+          url('../webfonts/Montserrat-Regular.woff2') format('woff2');
+    font-style: normal;
+}
+
+
+
+$Helvetica: 'Helvetica';
+$Montserrat-Black: 'Montserrat-Black';
+$Montserrat-Bold: 'Montserrat-Bold';
+$Montserrat-SemiBold: 'Montserrat-SemiBold';
+$Montserrat-Medium: 'Montserrat-Medium';
+$Montserrat-Regular: 'Montserrat-Regular';
+
+
+$url_image: '../img/';
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: $Montserrat-Medium, 'Sans-serif';
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+
+body{
+
+    position: relative;
+}
+
+
+
+
+a{
+    text-decoration: none;
+    font-family: $Montserrat-Medium;
+}
+
+ul{
+    list-style: none;
+}
+
+section{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
