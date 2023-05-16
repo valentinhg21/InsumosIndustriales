@@ -1,6 +1,7 @@
 export const filter = () => {
    let filtros = document.querySelectorAll('.filter')
    let items = document.querySelectorAll('.item')
+   let select = document.querySelector('.select')
    filtros.forEach((el, i) => {
         if(i == 0){
           el.classList.add('active')
@@ -47,5 +48,17 @@ export const filter = () => {
         })
 
         
+   })
+
+   select.addEventListener('click', () => {
+      let ul = select.nextElementSibling
+      ul.classList.toggle('active');
+      filtros.forEach((el) => {
+         let input  = document.getElementById('input')
+         el.addEventListener('click', () => {
+            ul.classList.remove('active');
+            input.value = el.textContent
+         })
+      })
    })
 }

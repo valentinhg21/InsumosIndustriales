@@ -8,6 +8,7 @@ header{
     top: 0;
     left: 0;
     z-index: 99;
+    transition: $fast;
     @include media(md){
         height: 60px;
     }
@@ -66,8 +67,8 @@ header{
                     @include media-down(md){
                       
                         &:hover{
-                            background: $yellow;
-                            color: $black;
+
+                            color: $yellow;
                         }
                     }
                     @include media(md){
@@ -82,8 +83,10 @@ header{
 }
 
 header.active{
+  
     .menu{
         opacity: 1;
         visibility: visible;
     }
 }
+

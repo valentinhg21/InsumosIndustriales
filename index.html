@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./dist/css/insumos.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <title>Insumos</title>
+    <title>Insumos Industriales</title>
 </head>
 <body>
     <main>
@@ -36,7 +36,7 @@
         </header>
         <section class="hero">
             <div class="container d-flex justify-center align-items-center flex-column">
-                <h1>Venta de productos para la <br><span>industria y construcción.</span></h1>
+                <h1>Venta de productos para <br><span>Insumos Industriales</span></h1>
             </div>
             <div class="chevron">
                 <a href="#nosotros" class="chevron-button">
@@ -64,7 +64,6 @@
                         </div>
                     </div>
                 </div>
-
             </div>
         </section>
         <section class="productos" id="productos">
@@ -72,7 +71,11 @@
                 <div class="titulo">
                     <h2>Nuestros <br>Productos</h2>
                 </div>
-                <div class="filtros">
+                <div class="filtros p-relative">
+                    <div class="select">
+                        <input type="text" placeholder="Todos" id="input">
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </div>
                     <ul>
                         <li class="filter" data-filter="all">Todos</li>
                         <li class="filter" data-filter="alambres">Alambres</li>
@@ -236,6 +239,146 @@
                 </div>
             </div>
         </section>
+        <section class="catalogo" id="catalogo">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-6 col-md-6 col-left"></div>
+                    <div class="col-md-6 col-md-6 pl-md-8 col-right">
+                        <div class="block-text">
+                            <h2>Conoce nuestro catalogo</h2>
+                            <p>
+                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sunt facere debitis vero quod quisquam earum aut, ex nemo. Sint consequuntur non vero iste error ipsum vel et repellat. Similique, quisquam.
+                            </p>
+                            <div class="block-btn"> 
+                                <a href="#" class="btn btn-black" download>
+                                    Descargar Catalogo
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="contacto" id="contacto">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 col-12">
+                        <div class="block-text">
+                            <h2>Contactate <br>con nosotros</h2>
+                            <p>
+                                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Delectus quod, laboriosam voluptate
+                            </p>
+                            <ul>
+                                <li>
+                                    <p>Telefono:</p>
+                                    <a href=""><i class="fa-solid fa-phone-volume"></i> (XXX) XXXX - XXXX</a>
+                                </li>
+                                <li>
+                                    <p>Email:</p>
+                                    <a href=""><i class="fa-solid fa-envelope-circle-check"></i> XXXXX@XXXXX.XXX</a>
+                                </li>
+                                <li>
+                                    <p>Ubicación:</p>
+                                    <a href=""><i class="fa-solid fa-location-dot"></i> XXXX XXXX 444</a>
+                                </li>
+                            </ul>
+                            <div class="block-btn mt-4">
+                                <a href="#" class="btn btn-black">
+                                    <i class="fa-brands fa-whatsapp"></i>
+                                    Whatsapp
+                                </a>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-12 pl-md-8" >
+                        <div class="formulario">
+                            <form>
+                                <div class="input">
+                                    <label for="email">Nombre Completo*</label>
+                                    <input type="text" id="nombre">
+                                </div>
+                                <div class="input">
+                                    <label for="email">Email*</label>
+                                    <input type="email" id="email">
+                                </div>
+                                <div class="input">
+                                    <label for="email">Nombre de empresa</label>
+                                    <input type="text" id="empresa">
+                                </div>
+                                <div class="input">
+                                    <label for="telefono">Teléfono</label>
+                                    <input type="text" id="telefono">
+                                </div>
+                                <div class="input">
+                                    <label for="telefono">Mensaje</label>
+                                    <textarea  id="mensaje" cols="30" rows="10">
+
+                                    </textarea>
+                                </div>
+                                <div class="block-btn mt-md-4 w-100 d-flex ">
+                                    <button type="submit" class="btn btn-outline w-100">
+                                        Enviar
+                                    </button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer>
+            <nav class="container">
+                <div class="logo" id="item-1">
+                    <a href="#">
+                        LOGO
+                    </a>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas hic aliquam minus iusto inventore nihil facere qui quia odio sint minima, voluptas ea nisi aut harum quisquam autem corporis at.
+                    </p>
+                </div>
+                <div class="menu" id="item-2">
+                    <ul>
+                        <li class="title">
+                            Información
+                        </li>
+                        <li>
+                            <a href=""><i class="fa-solid fa-phone-volume"></i> (XXX) XXXX - XXXX</a>
+                        </li>
+                        <li>
+                            <a href=""><i class="fa-solid fa-envelope-circle-check"></i> XXXXX@XXXXX.XXX</a>
+                        </li>
+                        <li>
+                            <a href=""><i class="fa-solid fa-location-dot"></i> XXXX XXXX 444</a>
+                        </li>
+
+                    </ul>
+                </div>
+                <div class="menu" id="item-3">
+                    <ul>
+                        <li class="title">
+                            Contenido
+                        </li>
+                        <li>
+                            <a href="">Nosotros</a>
+                        </li>
+                        <li>
+                            <a href="">Nuestros Productos</a>
+                        </li>
+                        <li>
+                            <a href="">Nuestros Catalogo</a>
+                        </li>
+                        <li>
+                            <a href="">Nuestros Contacto</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+            <div class="container copyright">
+                <div class="line-top"></div>
+                <p>LOGO - Todos los derechos reservados 2023</p>
+            </div>
+        </footer>
     </main>
     <script type="module" src="./dist/js/insumos.min.js"></script>
 </body>

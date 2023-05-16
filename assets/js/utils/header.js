@@ -14,7 +14,16 @@ export const hamburguer = () => {
   }
 }
 
-export const headerScroll = () => {
+export const headerScroll = (e) => {
+  const header = document.getElementById('nav')
+  document.addEventListener('scroll', e => {
+    let y = window.scrollY
+    if(y >= 40){
+      header.classList.add('scroll')
+    }else{
+      header.classList.remove('scroll')
+    }
+  })
 
 
 }

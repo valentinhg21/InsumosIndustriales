@@ -7,7 +7,7 @@ $slow: .4s all ease-in-out;
 .btn{
     min-width: 150px;
     min-height: 30px;
-    padding: 10px 10px;
+    padding: 12px 10px;
     font-size: 14px;
     text-transform: uppercase;
     transition: $fast;
@@ -16,14 +16,30 @@ $slow: .4s all ease-in-out;
     display: flex;
     justify-content: center;
     align-items: center;
+    border: none;
+    cursor: pointer;
+    i{
+        font-size: 20px;
+        margin-right: 10px;
+    }
 }
-
+.btn-outline{
+    background: transparent;
+    border: 1px solid $black;
+    color: $black;
+    height: 50px;
+    border-radius: 0;
+    &:hover{
+        background: $yellow;
+        color: $black;
+    }
+}
 .btn-yellow{
     background-color: $yellow;
     color: $white;
     &:hover{
         background-color: $black;
-        color: $black;
+        color: $white;
     }
 }
 .btn-black{
